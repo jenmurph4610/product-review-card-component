@@ -1,6 +1,5 @@
 
 
-
 /*Universal Formatting Section*/
 body {
     background-color: hsl(30, 38%, 92%);
@@ -46,6 +45,15 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+#add-cart-btn:hover {
+    background-color: hsl(159, 32%, 16%);
+
+}
+
+#add-cart-btn:focus {
+    background-color: hsl(159, 32%, 16%);
+
+}
 
 /*Mobile Format Section*/
 @media only screen and (max-width: 750px) {
