@@ -1,4 +1,7 @@
-/**Whole page styles**/
+
+
+
+/*Universal Formatting Section*/
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
@@ -7,73 +10,29 @@ body {
 }
 
 main {
-    border-radius: 10px;
-    background-color: white;
-    width: 375px;
     overflow: hidden;
     -webkit-box-shadow: 10px 9px 33px -1px rgba(92,92,92,0.91);
     -moz-box-shadow: 10px 9px 33px -1px rgba(92,92,92,0.91);
     box-shadow: 10px 9px 33px -1px rgba(92,92,92,0.91);
-    margin: auto;
-    
+    background-color: white;
 }
-
-#product-info-container {
-    padding: 10px 30px 30px 30px;
-
-}
-
-/**Image Section**/
-
-#mobile-image {
-    width:  100%;
-    
-
-}
-#desktop-image {
-    display: none;
-}
-
-
-
-
-
-
-/**Product Info Section **/
 
 #category {
     font-weight: 500;
-    font-size: 13px;
-    letter-spacing: 5px;
 }
 
 h1 {
     font-family: 'Fraunces', serif;
     color: hsl(212, 21%, 14%);
-    font-weight: 700;
-    font-size: 2.5em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: .95;
 }
 
 #product-description {
     line-height: 1.75;
-    font-weight: bold;
-}
-
-#price-section {
-    display: flex;
-    align-items: center;
-    gap: 25px;
 }
 
 #current-price {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
-    font-size: 2.4em;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 #original-price {
@@ -82,34 +41,158 @@ h1 {
 
 #add-cart-btn {
     background-color: hsl(158, 36%, 37%);
-    border-radius: 10px;
     color: white;
     border: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-
 }
 
-#button-icon {
-    padding-right: 5px;
-}
 
-/**Desktop section (Was designed mobile first)**/
-
-@media only screen and (min-width: 750px) {
+/*Mobile Format Section*/
+@media only screen and (max-width: 750px) {
+    main {
+        border-radius: 10px;
+        background-color: white;
+        width: 375px;
+        margin: 50px auto;
+    }
+    #mobile-image {
+        width:  100%;   
+    }
+    
     #desktop-image {
-        display: block;
+        display: none;
+    }
+
+    #product-info-container {
+        padding: 10px 30px 30px 30px;
+    }
+            
+    #category {
+        font-size: 13px;
+        letter-spacing: 5px;
+    }
+    
+    h1 {
+        font-weight: 700;
+        font-size: 2.5em;
+        line-height: .95;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #product-description {
+        font-weight: bold;
+    }
+    
+    #price-section {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    #current-price {
+        font-size: 2.4em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #add-cart-btn {
+        font-weight: 700;
+        font-size: 15px;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-radius: 10px;
+    }
+    
+    #button-icon {
+        padding-right: 5px;
+    }
+
+}
+
+/*Desktop Format Section*/
+@media only screen and (min-width: 751px) {
+    
+    main {
+        border-radius: 20px;
+        width: 1440px;
+        margin: 50px auto;
     }
 
     #mobile-image {
         display: none;
     }
+    
+    #desktop-image {
+        width: 720px;
+        height: 1083px;
+        display: block;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #image-container {
+        width: 50%;
+    }
+
+    #product-info-container {
+        width: 50%;
+        padding: 75px;
+    }
+
+    #category {
+        font-size: 30px;
+        letter-spacing: 10px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 88px;
+        line-height: .95;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #product-description {
+        font-size: 33px;
+        padding-top: 25px;
+    }
+
+    #price-section {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+
+    #current-price {
+        font-size: 85px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #original-price {
+        font-size: 33px;
+    }
+
+    #add-cart-btn {
+        font-weight: 700;
+        font-size: 35px;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 20px;
+    }
+    
+    #button-icon {
+        padding-right: 10px;
+        width: 30px;
+    }
   
 }
+
 
 /**Footer Styles**/
 
